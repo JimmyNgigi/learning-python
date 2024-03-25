@@ -125,7 +125,72 @@ for number in range(1,10,2):
     total+=number
 print("sum_of_odds is",total)
 """
+"""
 input=[input("Enter your name:"),input("Enter your name:"),input("Enter your name:")]
 print(input)
+"""
+
+fruits1 = ("banana", "apple", "orange")
+print(fruits1)
+
+fruits2 = ["apple","banana","orange"]
+print(fruits2)
+
+fruits = ("apple","banana","banana")
+fruits=list(fruits)
+print(fruits)
+fruits[2]="pineapples"
+print(fruits)
+fruits=tuple(fruits)
+print(fruits)
+
+fruits = {"apple","banana","orange"}
+print(fruits)
+
+myset = {True,False,1,0}
+print(len(myset))
+
+dictionery = {
+"apple": "fruit",
+"model": "mustang",
+"year": 2000
+ }
+print(dictionery)
+dictionery['year'] = 2005
+print(dictionery)
+
+car={
+    "brand" : "ford",
+    "model" : "mustang",
+    "year"  : "2019"
+    }
+print(car)
+x = car.items()
+print(x)
+car["year"] = 2005
+print(x)
+
+numbers = [1,3,7,19,25,20]
+def my_function(number):
+    largest = number[0]
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return largest
+print("The largest number is ",my_function(numbers))
+
+number1=0
+number2=20
+try:
+    x=number2/number1
+except Exception as e:
+   print("an error occurred",e)
+else:
+    print(x)
+    print("all is well")
+
+
+
+
 
 
